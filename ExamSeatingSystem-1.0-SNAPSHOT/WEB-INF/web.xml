@@ -1,0 +1,83 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="3.1">
+
+    <!-- 🔐 Login Servlet -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- 🆕 Register Servlet -->
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- 🧑‍🏫 Admin Create Exam -->
+    <servlet>
+        <servlet-name>CreateExamServlet</servlet-name>
+        <servlet-class>CreateExamServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateExamServlet</servlet-name>
+        <url-pattern>/CreateExamServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- 🧑‍🎓 Student Enroll Exam -->
+    <servlet>
+        <servlet-name>EnrollExamServlet</servlet-name>
+        <servlet-class>EnrollExamServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EnrollExamServlet</servlet-name>
+        <url-pattern>/EnrollExamServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ✅ Admin View + Approve Enrollment Page -->
+    <servlet>
+        <servlet-name>StaffApproveEnrollmentServlet</servlet-name>
+        <servlet-class>StaffApproveEnrollmentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StaffApproveEnrollmentServlet</servlet-name>
+        <url-pattern>/StaffApproveEnrollmentServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ✅ Admin POST Action: Approve or Reject Enrollment -->
+    <servlet>
+        <servlet-name>ApproveActionServlet</servlet-name>
+        <servlet-class>ApproveActionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ApproveActionServlet</servlet-name>
+        <url-pattern>/ApproveActionServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- 📋 Student View Enrollments -->
+    <servlet>
+        <servlet-name>StudentMyEnrollmentsServlet</servlet-name>
+        <servlet-class>StudentMyEnrollmentsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentMyEnrollmentsServlet</servlet-name>
+        <url-pattern>/StudentMyEnrollmentsServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- 📋 View All Exams -->
+    <servlet>
+        <servlet-name>ViewExamsServlet</servlet-name>
+        <servlet-class>ViewExamsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewExamsServlet</servlet-name>
+        <url-pattern>/ViewExamsServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>

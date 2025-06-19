@@ -1,0 +1,120 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+input[type="text"] {
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.btn-approve, .btn-reject {
+    padding: 6px 12px;
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-approve {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-reject {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-approve:hover {
+    background-color: #218838;
+}
+
+.btn-reject:hover {
+    background-color: #c82333;
+}
+
+.back-btn {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}
+
+.error {
+    background-color: #ffe0e0;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-left: 5px solid red;
+}
+
+.dark {
+    background-color: #121212;
+    color: #eee;
+}
+
+.dark table {
+    background-color: #1e1e1e;
+}
+
+.dark input[type="text"] {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+.dark .btn-approve {
+    background-color: #17d4fc;
+    color: black;
+}
+
+.dark .btn-reject {
+    background-color: #ff6b6b;
+}
+
+.dark .back-btn {
+    color: #17d4fc;
+}

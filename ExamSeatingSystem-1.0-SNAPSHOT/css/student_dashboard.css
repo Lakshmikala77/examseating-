@@ -1,0 +1,88 @@
+/* File: css/student_dashboard.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;
+    color: #222;
+    transition: background 0.4s, color 0.4s;
+}
+
+body.dark {
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.dashboard-container {
+    max-width: 960px;
+    margin: 80px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+body.dark .dashboard-container {
+    background-color: #2c2c2c;
+}
+
+h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    animation: fadeIn 0.5s ease-in;
+}
+
+th, td {
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+body.dark th, body.dark td {
+    border-color: #444;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+body.dark th {
+    background-color: #0057c1;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.back-link:hover {
+    color: #0056b3;
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,86 @@
+/* File: css/dashboard.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f8;
+    color: #222;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+    background-color: #1c1c1c;
+    color: #f5f5f5;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.dashboard-container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    animation: fadeIn 0.7s ease;
+}
+
+body.dark .dashboard-container {
+    background: #2c2c2c;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.actions {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn, .logout-btn {
+    display: inline-block;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    background: #007bff;
+    color: #fff;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.logout-btn {
+    background: #dc3545;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.logout-btn:hover {
+    background: #b02a37;
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

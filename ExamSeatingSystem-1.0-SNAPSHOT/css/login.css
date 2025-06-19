@@ -1,0 +1,94 @@
+/* File: css/login.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f0f2f5;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: background 0.4s, color 0.4s;
+}
+
+.dark {
+    background: #121212;
+    color: #f1f1f1;
+}
+
+.login-container {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 90%;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.dark .login-container {
+    background: #1e1e1e;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+label {
+    font-weight: 500;
+    display: block;
+    margin: 15px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #4e73df;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #4e73df;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #3758c4;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.2rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
